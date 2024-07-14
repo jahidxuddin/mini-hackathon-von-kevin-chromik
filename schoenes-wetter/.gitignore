@@ -1,0 +1,56 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Test binary, build with `go test -c`
+*.test
+
+# If you prefer the test results to be checked in as well, then you may want to
+# add the following as well:
+# *.test -test.v
+
+# Go workspace
+Godeps/
+vendor/
+
+# Go module files
+go.sum
+
+# Directories
+bin/
+obj/
+pkg/
+tmp/
+vendor/
+
+# IDEs and editors
+# JetBrains IDEs (GoLand, IntelliJ, etc.)
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Emacs
+*~
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+
+# Node modules (if using Node for front-end assets, etc.)
+node_modules/
