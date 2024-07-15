@@ -8,8 +8,9 @@ import (
 )
 
 type CurrentWeatherData struct {
-	Temp      float64
-	WindSpeed float64
+	Temp         float64
+	WindSpeed    float64
+	WeatherEmoji string
 }
 
 func GetWeatherDataByIp(ip string) (CurrentWeatherData, error) {
@@ -38,5 +39,9 @@ func GetWeatherDataByIp(ip string) (CurrentWeatherData, error) {
 		return CurrentWeatherData{}, fmt.Errorf("error getting current weather from user: %s", err)
 	}
 
-	return CurrentWeatherData{Temp: res.Temperature, WindSpeed: res.WindSpeed}, nil
+	return CurrentWeatherData{
+		Temp:         res.Temperature,
+		WindSpeed:    res.WindSpeed,
+		WeatherEmoji: WeatherCodeToASCIIArt(int(res.WeatherCode)),
+	}, nil
 }
