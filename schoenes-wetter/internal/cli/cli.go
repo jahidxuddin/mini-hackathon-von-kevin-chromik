@@ -9,9 +9,11 @@ import (
 
 	"github.com/jahidxuddin/hackathon-kevin-chromik/internal/clock"
 	"github.com/jahidxuddin/hackathon-kevin-chromik/internal/weather"
+	"github.com/pterm/pterm"
+	"github.com/pterm/pterm/putils"
 )
 
-var currentTime clock.CurrentTime
+var currentTime string
 var currentWeatherData weather.CurrentWeatherData
 
 func Run() {
@@ -41,14 +43,14 @@ func loop() {
 		if isUpdated {
 			render()
 		}
-		time.Sleep(100 * time.Millisecond)
+		time.Sleep(time.Second)
 	}
 }
 
 func update() bool {
 	time := clock.GetCurrentTime()
 
-	if time.Time != currentTime.Time {
+	if time != currentTime {
 		currentTime = time
 		return true
 	}
@@ -58,12 +60,14 @@ func update() bool {
 
 func render() {
 	clearConsole()
-	fmt.Print("\033[?25l")
-	fmt.Printf("\n")
-	fmt.Printf("\t%s | %s\n\n", currentTime.Time, currentTime.Date)
-	fmt.Printf(currentWeatherData.WeatherEmoji)
-	fmt.Printf("\tWindspeed: %v km/h\n", int(currentWeatherData.WindSpeed))
-	fmt.Printf("\tTemperature: %v °C\n", int(currentWeatherData.Temp))
+	disableCursor()
+
+	text, _ := pterm.DefaultBigText.WithLetters(putils.LettersFromString(currentTime)).Srender()
+
+	pterm.DefaultCenter.Println(text)
+	pterm.DefaultCenter.Printf(currentWeatherData.WeatherEmoji)
+	pterm.DefaultCenter.Printf("Windspeed: %v km/h", int(currentWeatherData.WindSpeed))
+	pterm.DefaultCenter.Printf("Temperature: %v °C", int(currentWeatherData.Temp))
 }
 
 func clearConsole() {
@@ -76,4 +80,8 @@ func clearConsole() {
 	}
 	cmd.Stdout = os.Stdout
 	cmd.Run()
+}
+
+func disableCursor() {
+	pterm.DefaultCenter.Print("\033[?25l")
 }
