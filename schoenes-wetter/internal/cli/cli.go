@@ -63,8 +63,8 @@ func render() {
 	disableCursor()
 
 	text, _ := pterm.DefaultBigText.WithLetters(putils.LettersFromString(currentTime)).Srender()
-
 	pterm.DefaultCenter.Println(text)
+	
 	pterm.DefaultCenter.Printf(currentWeatherData.WeatherEmoji)
 	pterm.DefaultCenter.Printf("Windspeed: %v km/h", int(currentWeatherData.WindSpeed))
 	pterm.DefaultCenter.Printf("Temperature: %v °C", int(currentWeatherData.Temp))
