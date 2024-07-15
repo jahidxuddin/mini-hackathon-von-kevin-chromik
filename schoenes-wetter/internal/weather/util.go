@@ -34,7 +34,7 @@ func WeatherCodeToASCIIArt(weatherCode int) string {
 
 var weatherCodeAsASCIIArt = map[int][6]string {
 	0: {
-		"\033[33m      \\   /    ",
+		"\033[33m     \\   /    ",
 		"      .-.      				 ",
 		"   - (   ) -   				 ",
 		"      - ’      				 ",
@@ -42,7 +42,7 @@ var weatherCodeAsASCIIArt = map[int][6]string {
 		"\033[97m              	 ",
 	},
 	1: {
-		"\033[33m  	  \\   /    ",
+		"\033[33m  	 \\   /    ",
 		"      .-.     					",
 		"   - (   ) -  					",
 		"      - ’     				  ",
@@ -82,7 +82,7 @@ var weatherCodeAsASCIIArt = map[int][6]string {
 		"\033[97m                ",
 	},
 	51: {
-		"\033[37m        .-.     ",
+		"\033[37m       .-.     ",
 		"      (   ).   ",
 		"     (___(__)  ",
 		"\033[34m     ‘ ‘ ‘ ‘ ‘  ",
@@ -90,7 +90,7 @@ var weatherCodeAsASCIIArt = map[int][6]string {
 		"\033[97m                ",
 	},
 	53: {
-		"\033[37m        .-.     ",
+		"\033[37m       .-.     ",
 		"      (   ).   ",
 		"     (___(__)  ",
 		"\033[34m     ‘ ‘ ‘ ‘ ‘  ",
@@ -98,7 +98,7 @@ var weatherCodeAsASCIIArt = map[int][6]string {
 		"\033[97m                ",
 	},
 	55: {
-		"\033[37m        .-.     ",
+		"\033[37m       .-.     ",
 		"      (   ).   ",
 		"     (___(__)  ",
 		"\033[34m     ‘ ‘ ‘ ‘ ‘  ",
@@ -106,7 +106,7 @@ var weatherCodeAsASCIIArt = map[int][6]string {
 		"\033[97m                ",
 	},
 	56: {
-		"\033[37m        .-.     ",
+		"\033[37m       .-.     ",
 		"      (   ).   ",
 		"     (___(__)  ",
 		"\033[34m     ‘ ‘ ‘ ‘ ‘  ",
@@ -114,7 +114,7 @@ var weatherCodeAsASCIIArt = map[int][6]string {
 		"\033[97m                ",
 	},
 	57: {
-		"\033[37m        .-.     ",
+		"\033[37m       .-.     ",
 		"      (   ).   ",
 		"     (___(__)  ",
 		"\033[34m     ‘ ‘ ‘ ‘ ‘  ",
@@ -122,7 +122,7 @@ var weatherCodeAsASCIIArt = map[int][6]string {
 		"\033[97m                ",
 	},
 	61: {
-		"\033[37m        .-.     ",
+		"\033[37m       .-.     ",
 		"      (   ).   ",
 		"     (___(__)  ",
 		"\033[34m     ‘ ‘ ‘ ‘ ‘  ",
@@ -130,7 +130,7 @@ var weatherCodeAsASCIIArt = map[int][6]string {
 		"\033[97m                ",
 	},
 	63: {
-		"\033[37m        .-.     ",
+		"\033[37m       .-.     ",
 		"      (   ).   ",
 		"     (___(__)  ",
 		"\033[34m     ‘ ‘ ‘ ‘ ‘  ",
@@ -138,7 +138,7 @@ var weatherCodeAsASCIIArt = map[int][6]string {
 		"\033[97m                ",
 	},
 	65: {
-		"\033[37m        .-.     ",
+		"\033[37m       .-.     ",
 		"      (   ).   ",
 		"     (___(__)  ",
 		"\033[34m     ‘ ‘ ‘ ‘ ‘  ",
@@ -146,7 +146,7 @@ var weatherCodeAsASCIIArt = map[int][6]string {
 		"\033[97m                ",
 	},
 	66: {
-		"\033[37m        .-.     ",
+		"\033[37m       .-.     ",
 		"      (   ).   ",
 		"     (___(__)  ",
 		"\033[34m     ‘ ‘ ‘ ‘ ‘  ",
@@ -154,7 +154,7 @@ var weatherCodeAsASCIIArt = map[int][6]string {
 		"\033[97m                ",
 	},
 	67: {
-		"\033[37m        .-.     ",
+		"\033[37m       .-.     ",
 		"      (   ).   ",
 		"     (___(__)  ",
 		"\033[34m     ‘ ‘ ‘ ‘ ‘  ",
@@ -162,7 +162,7 @@ var weatherCodeAsASCIIArt = map[int][6]string {
 		"\033[97m                ",
 	},
 	71: {
-		"033[37m        .-.     ",
+		"\033[37m       .-.     ",
 		"      (   ).   ",
 		"     (___(__)  ",
 		"\033[36m      *  *  *   ",
@@ -194,7 +194,7 @@ var weatherCodeAsASCIIArt = map[int][6]string {
 		"\033[97m                ",
 	},
 	80: {
-		"\033[37m        .-.     ",
+		"\033[37m       .-.     ",
 		"      (   ).   ",
 		"     (___(__)  ",
 		"\033[34m     ‘ ‘ ‘ ‘ ‘  ",
@@ -202,7 +202,7 @@ var weatherCodeAsASCIIArt = map[int][6]string {
 		"\033[97m                ",
 	},
 	81: {
-		"\033[37m        .-.     ",
+		"\033[37m       .-.     ",
 		"      (   ).   ",
 		"     (___(__)  ",
 		"\033[34m     ‘ ‘ ‘ ‘ ‘  ",
@@ -210,7 +210,7 @@ var weatherCodeAsASCIIArt = map[int][6]string {
 		"\033[97m                ",
 	},
 	82: {
-		"\033[37m        .-.     ",
+		"\033[37m       .-.     ",
 		"      (   ).   ",
 		"     (___(__)  ",
 		"\033[34m     ‘ ‘ ‘ ‘ ‘  ",
@@ -234,7 +234,7 @@ var weatherCodeAsASCIIArt = map[int][6]string {
 		"\033[97m                ",
 	},
 	95: {
-		"\033[37m        .-.     ",
+		"\033[37m       .-.     ",
 		"      (   ).   ",
 		"     (___(__)  ",
 		"\033[34m     ‘ ‘ ‘ ‘ ‘  ",
@@ -242,7 +242,7 @@ var weatherCodeAsASCIIArt = map[int][6]string {
 		"\033[97m                ",
 	},
 	96: {
-		"\033[37m        .-.     ",
+		"\033[37m       .-.     ",
 		"      (   ).   				 ",
 		"     (___(__)  				 ",
 		"\033[34m     ‘ ‘ ‘ ‘ ‘  ",
@@ -250,7 +250,7 @@ var weatherCodeAsASCIIArt = map[int][6]string {
 		"\033[97m                ",
 	},
 	99: {
-		"\033[37m        .-.     ",
+		"\033[37m       .-.     ",
 		"      (   ).   				 ",
 		"     (___(__) 					 ",
 		"\033[34m     ‘ ‘ ‘ ‘ ‘  ",
