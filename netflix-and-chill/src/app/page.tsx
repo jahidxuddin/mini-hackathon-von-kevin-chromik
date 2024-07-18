@@ -12,12 +12,14 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center space-y-8 p-4">
-      <h1 className="text-6xl font-black text-foreground">CinePicker</h1>
+      <h1 className="text-6xl font-black text-foreground">
+        <span className="text-accent">Cine</span>Picker
+      </h1>
       <div className="flex flex-col items-center space-y-4">
         <div className="flex gap-4">
           <Card className="h-96 w-64 border-border bg-card">
             <Image
-              src="/placeholder.svg"
+              src=""
               className="h-full"
               alt="Movie Poster"
               width={256}
