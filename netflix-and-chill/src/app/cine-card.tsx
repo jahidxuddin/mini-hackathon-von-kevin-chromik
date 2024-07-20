@@ -28,10 +28,18 @@ export default function CinceCard({
       <Card className="flex h-96 w-64 flex-col justify-between border-border bg-card p-4 text-card-foreground">
         <p>{description}</p>
         <div className="flex flex-wrap items-center gap-2">
-          <Badge className="bg-secondary">⭐ {rating}</Badge>
-          <Badge className="bg-secondary">⌛ {runtime}</Badge>
-          <Badge className="bg-secondary">📆 {releaseYear}</Badge>
-          <Badge className="bg-secondary">🎬 {type}</Badge>
+          <Badge className="bg-secondary transition-opacity hover:bg-secondary hover:opacity-85">
+            ⭐ {rating}
+          </Badge>
+          <Badge className="bg-secondary transition-opacity hover:bg-secondary hover:opacity-85">
+            ⌛ {runtime}
+          </Badge>
+          <Badge className="bg-secondary transition-opacity hover:bg-secondary hover:opacity-85">
+            📆 {releaseYear}
+          </Badge>
+          <Badge className="bg-secondary transition-opacity hover:bg-secondary hover:opacity-85">
+            🎬 {type}
+          </Badge>
         </div>
       </Card>
     </div>
