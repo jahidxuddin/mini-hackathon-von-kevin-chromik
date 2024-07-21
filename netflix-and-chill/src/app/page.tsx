@@ -1,21 +1,19 @@
-import CineCard, { CineCardProps } from "./cine-card";
+import { Suspense } from "react";
+import CineCard from "./cine-card";
 import CineCardSkeleton from "./cine-card-skeleton";
 import CinePickerForm from "./cine-picker-form";
+import { CineDetails } from "@/lib/omdb";
 
 export default function Home() {
-  // const res = await fetch(
-  //   `${process.env.MOVIE_API_BASE_URL}/?i=tt3896198&apikey=${process.env.MOVIE_API_KEY}`,
-  // );
-  // const data = await res.json();
-
   return (
     <main className="flex min-h-screen flex-col items-center justify-center space-y-8 p-8 sm:p-4">
       <h1 className="w-full text-center text-4xl font-black text-foreground sm:text-6xl">
         <span className="text-accent">Cine</span>Picker
       </h1>
       <div className="space-y-4">
-        {/* <CineCard {...PLACEHOLDER} /> */}
-        <CineCardSkeleton />
+        <Suspense fallback={<CineCardSkeleton />}>
+          <CineCard {...PLACEHOLDER} />
+        </Suspense>
         <CinePickerForm />
       </div>
     </main>
@@ -31,4 +29,4 @@ const PLACEHOLDER = {
   runtime: "136 min",
   releaseYear: "2017",
   type: "Movie",
-} satisfies CineCardProps;
+} satisfies CineDetails;

@@ -1,16 +1,8 @@
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
+import { CineDetails } from "@/lib/omdb";
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import Image from "next/image";
-
-export type CineCardProps = {
-  posterUrl: string | StaticImport;
-  description: string;
-  rating: number;
-  runtime: string;
-  releaseYear: string;
-  type: "Movie" | "Series";
-};
 
 export default function CinceCard({
   posterUrl,
@@ -19,7 +11,7 @@ export default function CinceCard({
   runtime,
   releaseYear,
   type,
-}: CineCardProps) {
+}: CineDetails) {
   return (
     <div className="flex w-full flex-col items-center gap-4 sm:flex-row">
       <Card className="h-96 w-64 border-border bg-card">

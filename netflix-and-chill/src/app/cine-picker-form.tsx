@@ -13,7 +13,7 @@ export default function CinePickerForm() {
   return (
     <form className="flex flex-col items-center gap-3">
       <div className="flex flex-wrap items-center justify-center gap-4">
-        <Select disabled>
+        <Select  disabled={false}>
           <SelectTrigger className="w-40 border-border bg-transparent">
             <SelectValue placeholder="Select Type" />
           </SelectTrigger>
@@ -29,7 +29,7 @@ export default function CinePickerForm() {
             ))}
           </SelectContent>
         </Select>
-        <Select disabled>
+        <Select disabled={false}>
           <SelectTrigger className="w-40 border-border bg-transparent">
             <SelectValue placeholder="Select Genre" />
           </SelectTrigger>
@@ -46,7 +46,10 @@ export default function CinePickerForm() {
           </SelectContent>
         </Select>
       </div>
-      <Button disabled className="w-fit rounded-full bg-primary transition-opacity hover:bg-primary hover:opacity-85">
+      <Button
+        disabled={false}
+        className="w-fit rounded-full bg-primary transition-opacity hover:bg-primary hover:opacity-85"
+      >
         🎲 Pick
       </Button>
     </form>
