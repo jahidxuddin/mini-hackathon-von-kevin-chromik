@@ -1,7 +1,7 @@
 # Mini Hackathon von Kevin Chromik
 
 In diesem Repository werden alle unsere Ergebnisse des Hackathons gesammelt.
-Teammember: [jahidxuddin](https://github.com/jahidxuddin), [A-M0ll](https://github.com/A-M0LL), [renaxdev](https://github.com/renaxdev)
+Mitwirkende: [jahidxuddin](https://github.com/jahidxuddin), [A-M0ll](https://github.com/A-M0LL), [renaxdev](https://github.com/renaxdev)
 
 ---
 
@@ -17,4 +17,3 @@ Anschließend nutzten wir [ip-api](https://ip-api.com/) um anhand der IP den ung
 Hier gehts zum [Projekt](https://github.com/jahidxuddin/hackathon-kevin-chromik/tree/main/schoenes-wetter)
 
 ---
-### Tag 2: Lecker Lecker
